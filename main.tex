@@ -1,0 +1,77 @@
+
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[
+	paperheight=8.5in,
+	paperwidth=5.5in,
+	outer=0.5in,
+	inner=0.6in,
+	bottom=1in,
+	top=0.7in
+]{geometry}
+
+\setlength{\parindent}{0em}
+
+\usepackage{xcolor}
+\newcommand{\todo}[1]{{\color{red}{TODO: #1}}}
+\newcommand{\proofincomplete}{\todo{Finish proof}}
+
+\usepackage[backend=biber]{biblatex}
+%\addbibresource{bibliography.bib}
+
+\usepackage{imakeidx}
+\makeindex[intoc=true]
+
+%\usepackage{glossaries-extra}
+%\makeglossaries
+%\input{chapters/chapter-2/chapter-2-glossary.tex}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem*{corollary}{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{pproposition}[theorem]{Proposition}
+\newtheorem{exercise}{Exercise}[chapter]
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{solution}{Solution}
+\newtheorem*{remark}{Remark}
+
+\usepackage{hyperref}
+
+\title{Solutions Notebook for\\Algebra\\by Serge Lang}
+\author{Jose Fernando Lopez Fernandez}
+\date{21 March, 2020 -- \today}
+
+\begin{document}
+	\frontmatter
+	\maketitle
+	\tableofcontents
+	\mainmatter
+%	\input{chapters/chapter-1.tex}
+%	\input{chapters/chapter-2.tex}
+%	\input{chapters/chapter-3.tex}
+%	\input{chapters/chapter-4.tex}
+%	\input{chapters/chapter-5.tex}
+%	\input{chapters/chapter-6.tex}
+%	\input{chapters/chapter-7.tex}
+%	\input{chapters/chapter-8.tex}
+%	\input{chapters/chapter-9.tex}
+%	\input{chapters/chapter-10.tex}
+%	\input{chapters/chapter-11.tex}
+%	\appendix
+%	\input{chapters/appendix-2.tex}
+%	\input{chapters/appendix-3.tex}
+	\backmatter
+%	\printbibliography[heading=bibintoc]
+%	\printglossaries
+	\printindex
+\end{document}
